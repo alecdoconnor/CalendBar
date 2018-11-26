@@ -1,7 +1,7 @@
 # CalendBar
-A Calendar for Your Mac Menu Bar
+A Calendar for Your Mac's Menu Bar
 
-## Summar
+## Summary
 The digital date and time viewer on your menu bar is missing one thing: a calendar. Simple and elegant, CalendBar is a customizable calendar that is always just a click away.
 
 ## Webpage & Download
