@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7008D1EF219A0DAE0015089F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7008D1EE219A0DAE0015089F /* Cocoa.framework */; };
+		700F9522219A1B5500D4B3CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700F9521219A1B5500D4B3CC /* AppDelegate.swift */; };
+		700F9526219A1B5600D4B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700F9525219A1B5600D4B3CC /* Assets.xcassets */; };
+		700F9529219A1B5600D4B3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700F9527219A1B5600D4B3CC /* Main.storyboard */; };
+		700F9530219A1D6700D4B3CC /* MCLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 700F951F219A1B5500D4B3CC /* MCLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		704E177A219613B700E0F2FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E1779219613B700E0F2FF /* AppDelegate.swift */; };
+		704E177E219613B900E0F2FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704E177D219613B900E0F2FF /* Assets.xcassets */; };
+		704E1781219613B900E0F2FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704E177F219613B900E0F2FF /* Main.storyboard */; };
+		704E178A21961A7700E0F2FF /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E178921961A7700E0F2FF /* EventMonitor.swift */; };
+		704E17922199B56E00E0F2FF /* Extension-NSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E17912199B56E00E0F2FF /* Extension-NSTextField.swift */; };
+		704E17952199BA5700E0F2FF /* CalendarPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E17932199BA5700E0F2FF /* CalendarPopoverViewController.swift */; };
+		704E17962199BA5700E0F2FF /* CalendarPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 704E17942199BA5700E0F2FF /* CalendarPopoverViewController.xib */; };
+		704E17992199CCB600E0F2FF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E17972199CCB600E0F2FF /* SettingsViewController.swift */; };
+		704E179A2199CCB600E0F2FF /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 704E17982199CCB600E0F2FF /* SettingsViewController.xib */; };
+		704E17A12199EEB600E0F2FF /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E179F2199EEB600E0F2FF /* SettingsWindowController.swift */; };
+		704E17A22199EEB600E0F2FF /* SettingsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 704E17A02199EEB600E0F2FF /* SettingsWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		700F952F219A1D4600D4B3CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				700F9530219A1D6700D4B3CC /* MCLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7008D1EE219A0DAE0015089F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7008D1F0219A0DB30015089F /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		700F951F219A1B5500D4B3CC /* MCLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		700F9521219A1B5500D4B3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		700F9525219A1B5600D4B3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		700F9528219A1B5600D4B3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		700F952A219A1B5600D4B3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700F952B219A1B5600D4B3CC /* MCLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MCLauncher.entitlements; sourceTree = "<group>"; };
+		704E1776219613B700E0F2FF /* Menu Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		704E1779219613B700E0F2FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		704E177D219613B900E0F2FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		704E1780219613B900E0F2FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		704E1782219613B900E0F2FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		704E1783219613B900E0F2FF /* menu_calendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = menu_calendar.entitlements; sourceTree = "<group>"; };
+		704E178921961A7700E0F2FF /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		704E17912199B56E00E0F2FF /* Extension-NSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-NSTextField.swift"; sourceTree = "<group>"; };
+		704E17932199BA5700E0F2FF /* CalendarPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPopoverViewController.swift; sourceTree = "<group>"; };
+		704E17942199BA5700E0F2FF /* CalendarPopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarPopoverViewController.xib; sourceTree = "<group>"; };
+		704E17972199CCB600E0F2FF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		704E17982199CCB600E0F2FF /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		704E179F2199EEB600E0F2FF /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		704E17A02199EEB600E0F2FF /* SettingsWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsWindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		700F951C219A1B5500D4B3CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		704E1773219613B700E0F2FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7008D1EF219A0DAE0015089F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7008D1ED219A0DAD0015089F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7008D1F0219A0DB30015089F /* ServiceManagement.framework */,
+				7008D1EE219A0DAE0015089F /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		700F9520219A1B5500D4B3CC /* MCLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				700F9521219A1B5500D4B3CC /* AppDelegate.swift */,
+				700F9525219A1B5600D4B3CC /* Assets.xcassets */,
+				700F9527219A1B5600D4B3CC /* Main.storyboard */,
+				700F952A219A1B5600D4B3CC /* Info.plist */,
+				700F952B219A1B5600D4B3CC /* MCLauncher.entitlements */,
+			);
+			path = MCLauncher;
+			sourceTree = "<group>";
+		};
+		704E176D219613B700E0F2FF = {
+			isa = PBXGroup;
+			children = (
+				704E1778219613B700E0F2FF /* menu-calendar */,
+				700F9520219A1B5500D4B3CC /* MCLauncher */,
+				704E1777219613B700E0F2FF /* Products */,
+				7008D1ED219A0DAD0015089F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		704E1777219613B700E0F2FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				704E1776219613B700E0F2FF /* Menu Calendar.app */,
+				700F951F219A1B5500D4B3CC /* MCLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		704E1778219613B700E0F2FF /* menu-calendar */ = {
+			isa = PBXGroup;
+			children = (
+				704E1779219613B700E0F2FF /* AppDelegate.swift */,
+				704E178921961A7700E0F2FF /* EventMonitor.swift */,
+				704E17932199BA5700E0F2FF /* CalendarPopoverViewController.swift */,
+				704E17942199BA5700E0F2FF /* CalendarPopoverViewController.xib */,
+				704E179F2199EEB600E0F2FF /* SettingsWindowController.swift */,
+				704E17A02199EEB600E0F2FF /* SettingsWindowController.xib */,
+				704E17972199CCB600E0F2FF /* SettingsViewController.swift */,
+				704E17982199CCB600E0F2FF /* SettingsViewController.xib */,
+				704E17912199B56E00E0F2FF /* Extension-NSTextField.swift */,
+				704E177D219613B900E0F2FF /* Assets.xcassets */,
+				704E177F219613B900E0F2FF /* Main.storyboard */,
+				704E1782219613B900E0F2FF /* Info.plist */,
+				704E1783219613B900E0F2FF /* menu_calendar.entitlements */,
+			);
+			path = "menu-calendar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		700F951E219A1B5500D4B3CC /* MCLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700F952E219A1B5600D4B3CC /* Build configuration list for PBXNativeTarget "MCLauncher" */;
+			buildPhases = (
+				700F951B219A1B5500D4B3CC /* Sources */,
+				700F951C219A1B5500D4B3CC /* Frameworks */,
+				700F951D219A1B5500D4B3CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCLauncher;
+			productName = MCLauncher;
+			productReference = 700F951F219A1B5500D4B3CC /* MCLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		704E1775219613B700E0F2FF /* Menu Calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 704E1786219613B900E0F2FF /* Build configuration list for PBXNativeTarget "Menu Calendar" */;
+			buildPhases = (
+				704E1772219613B700E0F2FF /* Sources */,
+				704E1773219613B700E0F2FF /* Frameworks */,
+				704E1774219613B700E0F2FF /* Resources */,
+				700F952F219A1D4600D4B3CC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Menu Calendar";
+			productName = "menu-calendar";
+			productReference = 704E1776219613B700E0F2FF /* Menu Calendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		704E176E219613B700E0F2FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Alec O'Connor";
+				TargetAttributes = {
+					700F951E219A1B5500D4B3CC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					704E1775219613B700E0F2FF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 704E1771219613B700E0F2FF /* Build configuration list for PBXProject "Menu Calendar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 704E176D219613B700E0F2FF;
+			productRefGroup = 704E1777219613B700E0F2FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				704E1775219613B700E0F2FF /* Menu Calendar */,
+				700F951E219A1B5500D4B3CC /* MCLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		700F951D219A1B5500D4B3CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700F9526219A1B5600D4B3CC /* Assets.xcassets in Resources */,
+				700F9529219A1B5600D4B3CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		704E1774219613B700E0F2FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704E177E219613B900E0F2FF /* Assets.xcassets in Resources */,
+				704E17A22199EEB600E0F2FF /* SettingsWindowController.xib in Resources */,
+				704E17962199BA5700E0F2FF /* CalendarPopoverViewController.xib in Resources */,
+				704E1781219613B900E0F2FF /* Main.storyboard in Resources */,
+				704E179A2199CCB600E0F2FF /* SettingsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		700F951B219A1B5500D4B3CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700F9522219A1B5500D4B3CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		704E1772219613B700E0F2FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704E178A21961A7700E0F2FF /* EventMonitor.swift in Sources */,
+				704E177A219613B700E0F2FF /* AppDelegate.swift in Sources */,
+				704E17952199BA5700E0F2FF /* CalendarPopoverViewController.swift in Sources */,
+				704E17992199CCB600E0F2FF /* SettingsViewController.swift in Sources */,
+				704E17A12199EEB600E0F2FF /* SettingsWindowController.swift in Sources */,
+				704E17922199B56E00E0F2FF /* Extension-NSTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		700F9527219A1B5600D4B3CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				700F9528219A1B5600D4B3CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		704E177F219613B900E0F2FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				704E1780219613B900E0F2FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		700F952C219A1B5600D4B3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MCLauncher/MCLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24LJMF7J23;
+				INFOPLIST_FILE = MCLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alecoconnor.MCLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		700F952D219A1B5600D4B3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MCLauncher/MCLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24LJMF7J23;
+				INFOPLIST_FILE = MCLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alecoconnor.MCLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		704E1784219613B900E0F2FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		704E1785219613B900E0F2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		704E1787219613B900E0F2FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "menu-calendar/menu_calendar.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24LJMF7J23;
+				INFOPLIST_FILE = "menu-calendar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alecoconnor.menu-calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		704E1788219613B900E0F2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "menu-calendar/menu_calendar.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24LJMF7J23;
+				INFOPLIST_FILE = "menu-calendar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alecoconnor.menu-calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		700F952E219A1B5600D4B3CC /* Build configuration list for PBXNativeTarget "MCLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700F952C219A1B5600D4B3CC /* Debug */,
+				700F952D219A1B5600D4B3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		704E1771219613B700E0F2FF /* Build configuration list for PBXProject "Menu Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704E1784219613B900E0F2FF /* Debug */,
+				704E1785219613B900E0F2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		704E1786219613B900E0F2FF /* Build configuration list for PBXNativeTarget "Menu Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704E1787219613B900E0F2FF /* Debug */,
+				704E1788219613B900E0F2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 704E176E219613B700E0F2FF /* Project object */;
+}
